@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="viewport" content="user-scalable=no" />
+	<title>BARTENDER</title>
+
+	 <link rel="icon" type="image/png" href="img/favicon.png" />
+	  <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /><![endif]-->
+	 <link type="text/css" rel="stylesheet" href="css/styles.css" />
+	 <link type="text/css" rel="stylesheet" href="css/reset.css" />
+	 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	 
+	 
+	 <script type="text/javascript">
+
+			
+			$(document).ready(function(){
+
+/** ===========================================
+    Hide / show the master navigation menu
+============================================ */
+
+  // console.log('Window Height is: ' + $(window).height());
+  // console.log('Document Height is: ' + $(document).height());
+
+  var previousScroll = 0;
+
+  $(window).scroll(function(){
+
+    var currentScroll = $(this).scrollTop();
+
+    /*
+      If the current scroll position is greater than 0 (the top) AND the current scroll position is less than the document height minus the window height (the bottom) run the navigation if/else statement.
+    */
+    if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()){
+      /*
+        If the current scroll is greater than the previous scroll (i.e we're scrolling down the page), hide the nav.
+      */
+      if (currentScroll > previousScroll){
+        window.setTimeout(hideNav, 300);
+      /*
+        Else we are scrolling up (i.e the previous scroll is greater than the current scroll), so show the nav.
+      */
+      } else {
+        window.setTimeout(showNav, 300);
+      }
+      /* 
+        Set the previous scroll value equal to the current scroll.
+      */
+      previousScroll = currentScroll;
+    }
+
+  });
+
+  function hideNav() {
+    $("[data-nav-status='toggle']").removeClass("is-visible").addClass("is-hidden");
+  }
+  function showNav() {
+    $("[data-nav-status='toggle']").removeClass("is-hidden").addClass("is-visible");
+  }
+
+});
+			
+			
+			
+	
+			   
+			   $(document).ready(function(){
+			
+						
+			$('a[href^="#"]').click(function(){  
+			  	var the_id = $(this).attr("href");  
+			    $('html, body').animate({  
+			        scrollTop:$(the_id).offset().top  
+			    }, 'slow');  
+			    return false;  
+			   });
+			   
+			   var navItems = document.querySelectorAll(".navstate li a");
+			   var sections = document.getElementsByTagName("section");
+			  
+			   
+			   for(i = 0; i < sections.length; i++){
+				   sections[i].topPos = sections[i].offsetTop - sections[i].clientHeight/2;
+				   sections[i].botPos = sections[i].topPos + sections[i].clientHeight;
+				   console.log(sections[i].topPos + " - " + sections[i].botPos);
+			   }
+			   sections[0].topPos = -2000; // fix scroll bounce
+			   
+			   
+			   
+			   document.addEventListener("scroll", function(event){
+			   	updateMenu(event, this);
+			   });
+			   
+			   function updateMenu(ev, el){
+					var currentScrollPos = document.body.scrollTop;
+					for(i = 0; i < sections.length; i++) {
+						if(currentScrollPos > sections[i].topPos && currentScrollPos < sections[i].botPos){
+							navItems[i].classList.add("active");
+						} else {
+							navItems[i].classList.remove("active");
+						}
+					}
+				}
+			   
+			});
+			
+			
+			
+			
+			
+	 </script>
+
+
+</head>
+
+<body>
+	<header>
+		<nav>
+			
+			<ul class="navstate navigation-bar is-hidden" data-nav-status="toggle">
+				
+				
+				
+				
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="index.html#accueil">Présentation</a></li>
+				<li><a href="index.html#video">Vidéo</a></li>
+				<li><a href="index.html#telecharger">L'essayer</a></li>
+				<li><a href="index.html#barman">Dans ton bar</a></li>				
+			</ul>
+		</nav>
+	</header>
+	
+	
+	
+
+	<div id="container">	
+
+		<section id="credits">
+			
+			<div class="content">
+				<div class="title">
+				<h2>Crédits </h2>
+
+				<div class="credit-top">
+					<ul>
+						<li><a href="http://thenounproject.com/">The Noun Project</a></li>
+						<li><a href="http://jquery.com/">Librairie jQuery</a></li>
+						<li><a href="http://jsfiddle.net/">Jsfiddle</a></li>
+						<li><a href="https://github.com/h5bp/html5-boilerplate">Boilerplate</a></li>
+						<li><a href="http://conceptlogic.com/jcart">Jcart</a></li>
+						<li><a href="http://raphaeljs.com">Raphaeljs</a></li>
+					</ul>
+				</div>
+							
+
+				
+				</div>
+			</div>
+			
+		</section>
+
+<footer>
+		
+
+		<ul>
+			
+			<li><a href="http://b-vandegent.be/" target="_blank">Brieuc van de Gent</a></li>
+			<li><a href="credits.html">- Crédits</a></li>
+			
+		</ul>
+
+
+	</footer>
+	</div> <!-- end container -->
+
+	
+</body>
+</html>

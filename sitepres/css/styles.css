@@ -1,0 +1,755 @@
+
+
+
+
+html {
+	height: 100%;
+	font-family: 'Lato', sans-serif; 
+	font-weight: 400;
+}
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	overflow-y: scroll;
+	background-color: #fff;
+	height: 100%;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	height: 100%;
+
+}
+
+
+section .content {
+	width: 100%;
+	height: 99.9%;
+	margin: 0 auto;
+	border-bottom: 1px solid;
+	border-color: rgba(86, 86, 86, 0.5)
+}
+
+.title {
+	max-width: 360px;
+	margin: 0 auto;
+}
+
+
+h1 {
+	;
+}
+
+
+.title h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    color:#565656;
+    position: relative;
+    top: 100px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    border-color: rgba(86, 86, 86, 0.5)
+}
+
+.title h2 span {
+font-weight: 300;
+	
+}
+
+
+/*============================== MENU ===============================*/
+
+.navigation-bar {
+  
+  
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;}
+  
+  .is-hidden {
+    opacity: 0;
+    -webkit-transform: translate(0,-60px);
+    -webkit-transition: -webkit-transform .2s,background .3s,color .3s,opacity 0 .3s;
+  }
+  
+  .is-visible {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -webkit-transition: -webkit-transform .2s,background .3s,color .3s;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;}
+    
+    li {
+      display: inline-block;
+      padding: 1em;
+    }
+
+
+
+
+
+
+
+
+nav {
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 4000;
+}
+nav ul {
+	display: block;
+	width: 100%;
+	height: 40px;
+	float: right;
+	background: #FFF;
+	
+}
+nav ul li {float: left;
+display: block;
+margin: 7px 30px 30px 0;
+	
+}
+
+
+
+nav ul li a {
+color: #565656;
+text-decoration: none;
+font-size: 20px;
+font-weight: 300;}
+
+nav ul:first-child {padding-left: 50px;}
+
+nav ul li a:hover {padding-bottom: 4px;
+	border-bottom: 1px solid #565656; 
+}
+
+
+
+
+
+
+
+/*============================NAV SECONDAIRE===============================*/
+
+
+
+
+
+a.active{
+padding-bottom: 4px;
+border-bottom: 1px solid #565656;
+}
+
+
+
+
+
+
+
+
+#intro {
+    position: relative;
+	background-color: #FFF;
+	width: 100%;
+}
+
+#intro .content {
+	background: url('../img/bar2.jpg');
+	background-size: cover;
+	background-position: center center;
+	border: none;
+	
+}
+
+
+
+
+/*============================== SECTION ACCUEIL ===============================*/
+
+
+
+#accueil {
+    position: relative;
+	background-color: #FFFFF;
+	width: 100%;
+}
+#img1{
+	background: url('../img/app-pres.png') no-repeat;
+	float: left;
+	height: 420px;
+	width: 216px;
+	margin-top: 70px;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    
+}
+.apercu-app {
+   position: relative;
+   margin: 70px auto;
+   margin-bottom: 20px;
+   max-width: 530px;
+}
+
+.apercu-app p {
+	float: left;
+	margin-top: 140px;
+	width: 290px;
+	margin-right: 20px;
+	font-size: 18px;
+line-height: 1.5;
+font-weight: 300;
+color: #565656;
+}
+.apercu-app img {
+	width: 40%;
+	float: left;
+	margin-top: 80px;
+}
+
+
+
+
+/*============================== VIDEO DESCRIPTION ===============================*/
+
+
+
+
+#video {
+    position: relative;
+    background-color: #FFF;
+    width: 100%;
+    display: block;
+}
+#video .content .title h2 {
+	color: #565656;
+	font-weight: 300;
+}
+#vcenter {width: 200px;
+	margin: auto;
+}
+.vcenter {
+	margin: auto;
+	margin-top: 150px;
+	width: 200px;
+}
+/*
+#video video {
+	
+	margin-top: 150px;
+	margin-left: -360px;
+	left: 50%;
+	position: relative;
+}
+*/
+
+
+#video .content #soon {
+	max-width: 640px;
+	height: 400px;
+	
+	margin:150px auto;
+	position: relative;
+	background: #FF716A;
+}
+
+#video .content #soon p {
+	margin: auto;
+	display: block;
+	font-size: 40px;
+	font-weight: 300;
+	width: 230px;
+	padding-top: 180px;
+}
+
+
+/*============================= SECTION TELECHARGER ==========================*/
+
+
+
+#telecharger {
+	position: relative;
+    background-color: #FFF;
+    width: 100%;
+    	
+}
+
+
+
+#iphone_dwn {
+	width: 600px;
+	height: 400px;
+	margin: 130px auto 0;
+	position: relative;
+	
+}
+
+#img2{
+	background: url('../img/app-ess.png') no-repeat;
+	margin: auto;
+	width: 600px;
+	height: 372px;
+	margin-top: 10px;
+}
+#iphone_dwn img {
+	width: 400px;
+	position: relative;
+	margin-top: 30px;
+}
+
+
+
+.download {
+	border: 1px solid #565656;
+	color: #565656;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px;
+	font-weight: 300;
+	display: inline-block;
+	
+}
+.center {
+	width: 240px;
+	height: 100px;
+	margin: auto;
+}
+
+.download:hover{
+	background: #565656;
+	color: #FFF ; 
+}
+
+/*============================= FOOTER  ==========================*/
+
+#barman .content h2 span {
+	color: #565656;
+}
+#barman .content #tablette {
+	width: 600px;
+	margin:130px auto;
+	margin-bottom: 80px;
+}
+
+#barman .content #tablette img {
+	margin-top: 0px;
+	width: 330px;
+	float: left;
+}
+
+#barman .content #tablette p {color:#565656;
+float: left;
+margin-top: 45px;
+width: 600px;
+margin-right: 20px;
+font-size: 18px;
+line-height: 1.5;
+font-weight: 300; }
+
+#barman .content #tablette img {
+	width: 450px; 
+}
+
+#barman .content #tablette a {text-decoration: none;
+	color:#565656;
+	font-style: italic;
+	text-decoration: underline;
+}
+#barman .content #tablette a:hover {
+text-decoration: underline;
+} 
+
+@-webkit-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes cf4FadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+					
+	#cf4a {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+  padding-top:  150px;
+}
+#cf4a img {
+  position:absolute;
+  left:0;
+  width: 450px; 
+
+}
+
+#cf4a img {
+	
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 8s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 8s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 8s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+#cf4a img:nth-of-type(1) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
+}
+
+
+
+
+/*============================= FOOTER  ==========================*/
+footer{
+	background-color: #565656;
+	height: 40px;
+	
+}
+
+footer a {
+	color: #FFF;
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: 300;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer ul{width: 220px;
+display: block;
+margin: auto;
+}
+
+footer ul li {
+	
+	float: left;
+	
+	margin-top: 12px;
+}
+
+
+
+/*============================= CREDITS TELECHARGER ==========================*/
+
+
+
+#credits {
+    position: relative;
+    background-color: #FFF;
+    width: 100%;
+        
+}
+
+#credits a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #565656;
+    position: relative;
+    margin-bottom: 20px;
+    
+} 
+
+#credits a:hover {
+   text-decoration: underline;
+}
+
+.credit-top {
+    margin-top: 200px;
+}
+
+
+#credits ul li {
+    margin-bottom: 20px;
+}
+
+#credits ul li {
+    font-size: 18px;
+    
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 20px;
+}
+
+
+#credits h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width: 850px) {
+
+    
+   
+    }
+
+@media screen and (max-width: 640px) {
+	
+	#top {
+    margin: 120px auto;
+    max-width: 70%;
+    
+    }
+  .navstate{
+	  display: none;
+  } 
+header nav {
+	display: none;
+
+} 
+    
+    .title h2 {
+	    text-transform: uppercase;
+	    font-size: 20px;
+	    line-height: 28px;
+	    position: relative;
+	    top: 50px;	
+	    padding-bottom: 20px;
+	    width: 100%;
+	    text-align: center;
+	    margin: 0 auto;
+    }
+    
+    
+#accueil .content  .apercu-app p {
+  width:300px ;
+  margin: auto;
+  margin-top: 0px;
+  float: none;
+  font-size: 16px;
+  
+	  
+  }
+#accueil .content .apercu-app img.apercu-01{
+	float: none;
+	margin: 40px auto;
+}
+    
+ /*
+   
+    #video video {
+		max-width: 420px;
+		margin-top: 150px;
+		margin-left: -210px;
+		left: 50%;
+		position: relative;
+	}
+*/
+  
+    
+    #iphone_dwn {
+	   margin-top: 70px;
+	   width: 580px;
+    }
+	
+    #img2 {
+	    width: 580px; 
+    }
+	
+	.download {
+		;
+	}
+	
+	#img1 {
+		float: none;
+		margin: 40px auto;
+	}	
+	#barman .content  #tablette {
+		width: 455px;
+		margin-top: 60px 
+	}
+	#barman .content  #tablette p {
+		float: none;
+		margin: auto;
+		width: 470px;
+		font-size: 16px;
+	}
+	
+	#cf4a {padding-top: 40px;}
+	
+}
+
+
+@media screen and (max-width: 450px) {
+	
+	
+
+    
+
+	
+	#img2 {
+	background: url("../img/app-ess320.png") no-repeat;
+	width: 300px;
+	height: 200px;
+	float: none;
+	margin: auto;
+		
+	}
+	
+	#barman .content #tablette {
+	   width: 300px;
+	   margin-top: 60px;
+	  
+    }	
+    
+    #barman .content #tablette p {
+	  float: none;
+	   font-size: 16px;
+	   margin-bottom: 40px;
+	   width: 300px;
+	   
+    }
+    
+    	#cf4a {width: 300px;}
+	
+	
+	#iphone_dwn {
+	   width: 300px;
+	   height: 200px;
+    }
+    
+        #barman .content #tablette img {
+width: 300px;
+}
+	 
+}	
+  
+	
+	
+    
+
+
+	
+	
+	
+	
+}
