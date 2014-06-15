@@ -1,10 +1,10 @@
 <?php
 
 /*Define constant to connect to database */
-DEFINE('DATABASE_USER', 'bvandegeforum');
-DEFINE('DATABASE_PASSWORD', 'ZzbK3TXtsEsR');
-DEFINE('DATABASE_HOST', 'mysql51-125.perso');
-DEFINE('DATABASE_NAME', 'bvandegeforum');
+DEFINE('DATABASE_USER', 'localhost');
+DEFINE('DATABASE_PASSWORD', 'root');
+DEFINE('DATABASE_HOST', 'HOST');
+DEFINE('DATABASE_NAME', 'NAME');
 /*Default time zone ,to be able to send mail */
 date_default_timezone_set('UTC');
 
